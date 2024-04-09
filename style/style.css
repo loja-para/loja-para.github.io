@@ -8,7 +8,7 @@ body{
     width: 130px;
     height: 85px;
 }
-img{
+.card-img-top{
     border-radius: 10px;
     width: 300px;
 }
