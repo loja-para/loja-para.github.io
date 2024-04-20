@@ -11,6 +11,8 @@ body{
 .card-img-top{
     border-radius: 10px;
     width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 .ancora{
     background-color: rgb(123, 123, 216);
@@ -21,5 +23,16 @@ body{
     background-color: rgba(117, 105, 105, 0.664);
     border-radius: 10px;
     width: 300px;
-    height: 425px;
+    height: 420px;
+    margin-bottom: 12px;
+}
+.card-title{
+    font-weight: bold;
+    margin-left: 3px;
+    size: 25px;
+}
+.card-text{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
 }
