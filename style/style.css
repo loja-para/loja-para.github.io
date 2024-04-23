@@ -34,7 +34,7 @@ body{
 .card-title{
     font-weight: bold;
     margin-left: 5px;
-    size: 25px;
+    size: 30px;
 }
 .card-text{
     margin-left: 7px;
@@ -57,4 +57,7 @@ body{
     max-width: 690px; /* Ajuste este valor conforme necessário */
     margin-left: auto;
     margin-right: auto;
+}
+.categoria{
+    text-align: center;
 }
