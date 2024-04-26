@@ -84,7 +84,26 @@ body{
     height: 30px;
     width: auto;
 }
-.botaoBonito {
+.cartGo{
+    margin-right: 8px;
+    height: 35px;
+    width: auto;
+}
+.botaoComprar{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    float: left;
+    text-align: justify;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+.botaoCarrinho{
     border-radius: 5px;
     background-color: rgb(123, 123, 216);
     float: right;
