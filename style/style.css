@@ -79,3 +79,26 @@ body{
 .categoria{
     text-align: center;
 }
+.cart{
+    margin-right: 8px;
+    height: 30px;
+    width: auto;
+}
+.botaoBonito {
+    border-radius: 5px;
+    background-color: rgb(123, 123, 216);
+    float: right;
+    text-align: justify;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    font-weight: bold;
+}
+.linkMais{
+    text-decoration: none;
+    color: inherit;
+}
