@@ -19,12 +19,23 @@ body{
     display: block;
 } */
 .logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 30px;
+    margin-left: 10%;
     margin-bottom: 5px;
     width: 135px;
     height: 90px;
+}
+.menu{
+    align-items: center;
+    display: flex;
+}
+.textoMenu{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
 }
 .card-img-top{
     border-radius: 10px;
