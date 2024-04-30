@@ -19,18 +19,18 @@ body{
     display: block;
 } */
 .logo{
-    margin-right: 30px;
-    margin-left: 10%;
-    margin-bottom: 5px;
     width: 135px;
     height: 90px;
 }
 .menu{
     align-items: center;
     display: flex;
+    margin-right: 30px;
+    margin-left: 10%;
+    margin-bottom: 5px;
 }
 .textoMenu{
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 10px;
     font-weight: bold;
     color: white;
@@ -131,4 +131,13 @@ body{
 .linkMais{
     text-decoration: none;
     color: inherit;
+}
+.alunos{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 450px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
 }
