@@ -30,6 +30,8 @@ body{
     margin-bottom: 5px;
 }
 .textoMenu{
+    align-items: center;
+    display: flex;
     margin-left: 30px;
     margin-right: 10px;
     font-weight: bold;
@@ -98,6 +100,11 @@ body{
 .cartGo{
     margin-right: 8px;
     height: 35px;
+    width: auto;
+}
+.cartMenu{
+    margin-right: 8px;
+    height: 30px;
     width: auto;
 }
 .botaoComprar{
