@@ -76,7 +76,7 @@ body{
 .card-container1 {
     display: flex;
     justify-content: space-between;
-    max-width: 690px; /* Ajuste este valor conforme necessário */
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
     overflow-x: auto;
@@ -84,7 +84,7 @@ body{
 .card-container2 {
     display: flex;
     justify-content: space-between;
-    max-width: 690px; /* Ajuste este valor conforme necessário */
+    max-width: 1260px;
     margin-left: auto;
     margin-right: auto;
     overflow-x: auto;
