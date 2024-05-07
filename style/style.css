@@ -22,12 +22,31 @@ body{
     width: 135px;
     height: 90px;
 }
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 70px;
+        /* outros estilos para mobile */
+    
+    }
+}
+
 .menu{
     align-items: center;
     display: flex;
     margin-right: 30px;
     margin-left: 10%;
     margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .menu {
+        align-items: center;
+        display: block;
+        margin-right: 30px;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        /* outros estilos para mobile */
+    }
 }
 .textoMenu{
     align-items: center;
@@ -37,7 +56,20 @@ body{
     font-weight: bold;
     color: white;
     text-decoration: none;
-
+}
+@media (max-width: 768px) {
+    .textoMenu {
+        align-items: center;
+        display: flex;
+        margin-left: 130px;
+        margin-right: 10px;
+        margin-bottom: 75px;
+        margin-top: -65px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        /* outros estilos para mobile */
+    }
 }
 .card-img-top{
     border-radius: 10px;
