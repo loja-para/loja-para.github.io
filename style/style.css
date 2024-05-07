@@ -268,8 +268,58 @@ body{
     font-weight: bold;
     margin-top: 20px;
 }
-.valorProduto{
+.imgPag{
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+}
+@media (max-width: 615px) {
+    .imgPag {
+        margin-left: 5%;
+        margin-top: 20px;
+        width: 110%;
+        height: 120%;
+        object-fit: cover;
+        align-items: center;
+        /* outros estilos para mobile */
+    }
+}
+.textoPag{
+    width: 600px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    color: white;
+}
+.valorProdutoMenu{
     margin-right: 3px;
     font-size: smaller;
     text-decoration: none;
+}
+.valorProdutoPag {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.botaoComprarPag{
+    position: absolute;
+    top: 158px;
+    right: 100px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    float: left;
+    text-align: justify;
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
 }
