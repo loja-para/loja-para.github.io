@@ -14,7 +14,13 @@
     <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
         <a href="index.html" class="textoMenu">Início</a>
         <a href="equipe.html" class="textoMenu">Equipe</a>
-        <a href="carrinho.html" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</a>
+        <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+        <div id="sidePanel" class="side-panel">
+          <button onclick="closePanel()" class="buttonX"> X </button>
+          <!-- Insira suas informações aqui -->
+          <h3 class="carrinhoTitle" style="margin-left: 20px;"> Carrinho </h3>
+          <p></p>
+      </div>
     </div> </header>
     <h2 class="categoria">Veropa em Casa</h2>
     <div class="card-container1">

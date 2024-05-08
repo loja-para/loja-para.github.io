@@ -56,6 +56,8 @@ body{
     font-weight: bold;
     color: white;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
 }
 @media (max-width: 615px) {
     .textoMenu {
@@ -68,6 +70,8 @@ body{
         font-weight: bold;
         color: white;
         text-decoration: none;
+        background-color: transparent;
+        border: none;
         /* outros estilos para mobile */
     }
 }
@@ -209,6 +213,7 @@ body{
     width: auto;
 }
 .botaoComprar{
+    height: 37px;
     border-radius: 5px;
     background-color: rgb(255, 0, 0);
     float: left;
@@ -254,9 +259,11 @@ body{
     color: inherit;
     padding: 5px;
     font-weight: bold;
+    border: none;
 }
 @media (max-width: 615px) {
     .botaoCarrinho {
+        width: 130px;
         font-size: smaller;
         border-radius: 5px;
         background-color: rgb(123, 123, 216);
@@ -346,4 +353,24 @@ body{
     color: white;
     padding: 5px;
     font-weight: bold;
+}
+.side-panel {
+    position: fixed;
+    right: -300px; /* Inicialmente escondido à direita */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(206, 161, 240);
+    transition: right 0.3s; /* Animação para deslizar para dentro e para fora */
+}
+.buttonX{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-family: Arial, Bold, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
