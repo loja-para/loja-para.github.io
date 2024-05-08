@@ -16,11 +16,18 @@
         <a href="equipe.html" class="textoMenu">Equipe</a>
         <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
         <div id="sidePanel" class="side-panel">
+          <!-- Botão de fechar permanece aqui -->
+          <button id="btnFechar" onclick="closePanel()"> X </button>
+      
+          <!-- Novo contêiner para itens do carrinho -->
+          <div id="itensCarrinho"></div>
+      </div>
+        <!-- <div id="sidePanel" class="side-panel">
           <button onclick="closePanel()" class="buttonX"> X </button>
-          <!-- Insira suas informações aqui -->
+          <!-- Insira suas informações aqui --
           <h3 class="carrinhoTitle" style="margin-left: 20px;"> Carrinho </h3>
           <p></p>
-      </div>
+      </div> -->
     </div> </header>
     <h2 class="categoria">Veropa em Casa</h2>
     <div class="card-container1">
