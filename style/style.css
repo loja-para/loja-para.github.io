@@ -225,13 +225,13 @@ body{
 }
 @media (max-width: 615px) {
     .botaoComprar {
+        width: 130px;
         font-size: smaller;
         border-radius: 5px;
         background-color: rgb(255, 0, 0);
         float: left;
         text-align: justify;
-        margin-left: 15px;
-        display: flex;
+        margin-left: 12px;
         align-items: center;
         justify-content: center;
         text-decoration: none;
@@ -318,7 +318,7 @@ body{
     color: white;
 }
 .valorProdutoMenu{
-    margin-right: 5px;
+    margin-right: 50px;
     font-size: smaller;
     text-decoration: none;
 }
