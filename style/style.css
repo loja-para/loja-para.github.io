@@ -80,8 +80,8 @@ body{
 @media (max-width: 615px) {
     .card-img-top {
         border-radius: 10px;
-        width: 150px;
-        height: 100px;
+        width: 160px;
+        height: auto;
         object-fit: cover;
         /* outros estilos para mobile */
     }
@@ -106,8 +106,31 @@ body{
         margin-right: 5px;
         background-color: rgba(117, 105, 105, 0.664);
         border-radius: 10px;
-        width: 200px;
-        height: 320px;
+        width: 160px;
+        height: 365px;
+        margin-bottom: 12px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        /* outros estilos para mobile */
+    }
+}
+.card2{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(117, 105, 105, 0.664);
+    border-radius: 10px;
+    width: 300px;
+    height: 420px;
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 615px) {
+    .card2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: rgba(117, 105, 105, 0.664);
+        border-radius: 10px;
+        width: 160px;
+        height: 410px;
         margin-bottom: 12px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         /* outros estilos para mobile */
@@ -191,6 +214,7 @@ body{
     float: left;
     text-align: justify;
     margin-left: 7px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +318,7 @@ body{
     color: white;
 }
 .valorProdutoMenu{
-    margin-right: 3px;
+    margin-right: 5px;
     font-size: smaller;
     text-decoration: none;
 }
