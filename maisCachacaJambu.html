@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="imagens/logo/icon.png" type="image/png">
     <script src="script/script.js"></script>
-    <title>Barcos de Miriti - Loja Pará</title>
+    <title>Cachaça de Jambu - Loja Pará</title>
 </head>
 <body>
     <div class="menu">
@@ -14,8 +14,20 @@
             <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"> </a>
             <a href="index.html" class="textoMenu">Início</a>
             <a href="equipe.html" class="textoMenu">Equipe</a>
-            <a href="##" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</a>
+            <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+            <div id="sidePanel" class="side-panel">
+                <!-- Botão de fechar permanece aqui -->
+                <button id="btnFechar" onclick="closePanel()"> X </button>
+            
+                <!-- Novo contêiner para itens do carrinho -->
+                <div id="itensCarrinho"></div>
+            </div>
         </div>
-    <p>Esse site é dificil de mexer</p>
+    <h2 class="tituloPag">Cachaça de Jambu</h2>
+    <img src="imagens/conteudo/cachacaJambu.jpg" class="imgPag" alt="">
+    <p class="textoPag">A cachaça de jambu é uma experiência sensorial única, onde o sabor natural do jambu se harmoniza com a pureza da cachaça.</p>
+    <p class="valorProdutoPag"> R$ 7,90 </p>
+    <a class="botaoComprarPag" href=""> <img class="cartGo" src="imagens/menu/cartGo.png"> Comprar agora </a>
+    <button class="botaoCarrinhoPag" onclick="adicionarJambu()"> <img class="cart" src="imagens/menu/cart.png"> Adicionar ao carrinho </button>
 </body>
 </html>

@@ -14,8 +14,20 @@
             <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"> </a>
             <a href="index.html" class="textoMenu">Início</a>
             <a href="equipe.html" class="textoMenu">Equipe</a>
-            <a href="##" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</a>
+            <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+            <div id="sidePanel" class="side-panel">
+                <!-- Botão de fechar permanece aqui -->
+                <button id="btnFechar" onclick="closePanel()"> X </button>
+            
+                <!-- Novo contêiner para itens do carrinho -->
+                <div id="itensCarrinho"></div>
+            </div>
         </div>
-    <p>Esse site é dificil de mexer</p>
+    <h2 class="tituloPag">Colar de Biojoias Amazônicas</h2>
+    <img src="imagens/conteudo/colarBiojoias.jpg" class="imgPag" alt="">
+    <p class="textoPag">Explore a exuberância da Amazônia com colares que capturam a essência da floresta tropical! Criados com folhas e sementes naturais, cada peça é uma obra de arte sustentável.</p>
+    <p class="valorProdutoPag"> R$ 9,90 </p>
+    <a class="botaoComprarPag" href=""> <img class="cartGo" src="imagens/menu/cartGo.png"> Comprar agora </a>
+    <button class="botaoCarrinhoPag" onclick="adicionarBiojoia()"> <img class="cart" src="imagens/menu/cart.png"> Adicionar ao carrinho </button>
 </body>
 </html>

@@ -29,16 +29,30 @@ function removerItem(index) {
     // Atualize o painel do carrinho
     atualizarCarrinho();
 }
-
-// Função para atualizar o painel do carrinho
+//@math: início do cachaça de jambu
 function atualizarCarrinho() {
-    // Obtenha o elemento do contêiner de itens do carrinho
     var containerItens = document.getElementById('itensCarrinho');
-
-    // Limpe o contêiner de itens
     containerItens.innerHTML = '';
-
-    // Adicione cada item do carrinho ao contêiner
+    for (var i = 0; i < carrinho.length; i++) {
+        var item = carrinho[i];
+        containerItens.innerHTML += '<img src="' + item.imagemUrl + '" alt="' + item.nome + '" style="width: 115px; height: 75px;"><p>' + item.nome + ' - R$ ' + item.preco.toFixed(2) + '</p><button onclick="removerItem(' + i + ')">Remover</button>';
+    }
+}
+function adicionarJambu(nome, preco, imagemUrl) {
+    carrinho.push({
+        nome: 'Cachaça de Jambu',
+        preco: 7.90,
+        imagemUrl: 'imagens/conteudo/cachacaJambu.jpg'
+    });
+    atualizarCarrinho();
+}
+function removerItem(index) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+}
+function atualizarCarrinho() {
+    var containerItens = document.getElementById('itensCarrinho');
+    containerItens.innerHTML = '';
     for (var i = 0; i < carrinho.length; i++) {
         var item = carrinho[i];
         containerItens.innerHTML += '<img src="' + item.imagemUrl + '" alt="' + item.nome + '" style="width: 115px; height: 75px;"><p>' + item.nome + ' - R$ ' + item.preco.toFixed(2) + '</p><button onclick="removerItem(' + i + ')">Remover</button>';
