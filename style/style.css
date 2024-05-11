@@ -385,6 +385,17 @@ body{
     background-color: rgb(206, 161, 240);
     transition: right 0.3s; /* Animação para deslizar para dentro e para fora */
 }
+.carrinhoTitle{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+.imgCarrinho{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 #btnFechar{
     position: absolute;
     top: 10px;
