@@ -3,7 +3,7 @@ function openPanel() {
 }
 
 function closePanel() {
-    document.getElementById('sidePanel').style.right = '-300px';
+    document.getElementById('sidePanel').style.right = '-400px';
 }
 // Crie um array para armazenar os itens do carrinho
 var carrinho = [];

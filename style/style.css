@@ -378,9 +378,9 @@ body{
 .side-panel {
     position: fixed;
     z-index: 9999;
-    right: -300px; /* Inicialmente escondido à direita */
+    right: -400px; /* Inicialmente escondido à direita */
     top: 0;
-    width: 300px;
+    width: 400px;
     height: 100%;
     background-color: rgb(206, 161, 240);
     transition: right 0.3s; /* Animação para deslizar para dentro e para fora */
