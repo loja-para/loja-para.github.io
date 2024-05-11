@@ -13,6 +13,7 @@ function openPanel() {
 function closePanel() {
     document.getElementById('sidePanel').style.right = '-400px';
 }
+
 // Crie um array para armazenar os itens do carrinho
 var carrinho = [];
 
@@ -31,6 +32,8 @@ function adicionarCarrinho(item)
         document.getElementById('botaoPagar').style.display = 'block';
     }
 }
+
+// Função para remover item do carrinho
 function remover(item)
 {
     carrinho.pop(item);

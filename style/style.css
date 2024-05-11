@@ -246,6 +246,8 @@ body{
         /* outros estilos para mobile */
     }
 }
+
+/* Adicionar alguma animação no botão (fica estranho clicar e não acontecer nada) */
 .botaoCarrinho{
     height: 48px;
     width: 125px;
