@@ -56,6 +56,8 @@ body{
     font-weight: bold;
     color: white;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
 }
 @media (max-width: 615px) {
     .textoMenu {
@@ -68,6 +70,8 @@ body{
         font-weight: bold;
         color: white;
         text-decoration: none;
+        background-color: transparent;
+        border: none;
         /* outros estilos para mobile */
     }
 }
@@ -80,8 +84,8 @@ body{
 @media (max-width: 615px) {
     .card-img-top {
         border-radius: 10px;
-        width: 150px;
-        height: 100px;
+        width: 160px;
+        height: auto;
         object-fit: cover;
         /* outros estilos para mobile */
     }
@@ -106,8 +110,31 @@ body{
         margin-right: 5px;
         background-color: rgba(117, 105, 105, 0.664);
         border-radius: 10px;
-        width: 200px;
-        height: 320px;
+        width: 160px;
+        height: 365px;
+        margin-bottom: 12px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        /* outros estilos para mobile */
+    }
+}
+.card2{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(117, 105, 105, 0.664);
+    border-radius: 10px;
+    width: 300px;
+    height: 420px;
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 615px) {
+    .card2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: rgba(117, 105, 105, 0.664);
+        border-radius: 10px;
+        width: 160px;
+        height: 410px;
         margin-bottom: 12px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         /* outros estilos para mobile */
@@ -186,11 +213,13 @@ body{
     width: auto;
 }
 .botaoComprar{
+    height: 37px;
     border-radius: 5px;
     background-color: rgb(255, 0, 0);
     float: left;
     text-align: justify;
     margin-left: 7px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,13 +230,13 @@ body{
 }
 @media (max-width: 615px) {
     .botaoComprar {
+        width: 130px;
         font-size: smaller;
         border-radius: 5px;
         background-color: rgb(255, 0, 0);
         float: left;
         text-align: justify;
-        margin-left: 15px;
-        display: flex;
+        margin-left: 12px;
         align-items: center;
         justify-content: center;
         text-decoration: none;
@@ -218,6 +247,8 @@ body{
     }
 }
 .botaoCarrinho{
+    height: 48px;
+    width: 125px;
     border-radius: 5px;
     background-color: rgb(123, 123, 216);
     float: right;
@@ -230,9 +261,11 @@ body{
     color: inherit;
     padding: 5px;
     font-weight: bold;
+    border: none;
 }
 @media (max-width: 615px) {
     .botaoCarrinho {
+        width: 130px;
         font-size: smaller;
         border-radius: 5px;
         background-color: rgb(123, 123, 216);
@@ -294,7 +327,7 @@ body{
     color: white;
 }
 .valorProdutoMenu{
-    margin-right: 3px;
+    margin-right: 50px;
     font-size: smaller;
     text-decoration: none;
 }
@@ -322,4 +355,44 @@ body{
     color: white;
     padding: 5px;
     font-weight: bold;
+}
+.botaoCarrinhoPag{
+    position: absolute;
+    top: 210px;
+    right: 85px;
+    width: 170px;
+    border-radius: 5px;
+    background-color: rgb(123, 123, 216);
+    float: right;
+    text-align: left;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    font-weight: bolder;
+    border: none;
+}
+.side-panel {
+    position: fixed;
+    z-index: 9999;
+    right: -300px; /* Inicialmente escondido à direita */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(206, 161, 240);
+    transition: right 0.3s; /* Animação para deslizar para dentro e para fora */
+}
+#btnFechar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-family: Arial, Bold, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }

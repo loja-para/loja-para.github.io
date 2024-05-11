@@ -8,14 +8,26 @@
     <script src="script/script.js"></script>
     <title>Barcos de Miriti - Loja Pará</title>
 </head>
-<body>  
+<body>
     <div class="menu">
         <a href="index.html">
             <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"> </a>
             <a href="index.html" class="textoMenu">Início</a>
             <a href="equipe.html" class="textoMenu">Equipe</a>
-            <a href="##" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</a>
+            <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+            <div id="sidePanel" class="side-panel">
+                <!-- Botão de fechar permanece aqui -->
+                <button id="btnFechar" onclick="closePanel()"> X </button>
+            
+                <!-- Novo contêiner para itens do carrinho -->
+                <div id="itensCarrinho"></div>
+            </div>
         </div>
-    <p>Esse site é dificil de mexer</p>
+    <h2 class="tituloPag">Barcos de Miriti</h2>
+    <img src="imagens/conteudo/barcosMiriti.jpg" class="imgPag" alt="">
+    <p class="textoPag">Embarcações únicas, feitas à mão por artesãos habilidosos, capturam a essência da floresta e da cultura local. Explore nossa coleção e leve para casa um pedaço da magia amazônica!</p>
+    <p class="valorProdutoPag"> R$ 5,90 </p>
+    <a class="botaoComprarPag" href=""> <img class="cartGo" src="imagens/menu/cartGo.png"> Comprar agora </a>
+    <button class="botaoCarrinhoPag" onclick="adicionarBarco()"> <img class="cart" src="imagens/menu/cart.png"> Adicionar ao carrinho </button>
 </body>
 </html>

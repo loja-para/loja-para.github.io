@@ -14,8 +14,20 @@
             <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"> </a>
             <a href="index.html" class="textoMenu">Início</a>
             <a href="equipe.html" class="textoMenu">Equipe</a>
-            <a href="##" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</a>
+            <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+            <div id="sidePanel" class="side-panel">
+                <!-- Botão de fechar permanece aqui -->
+                <button id="btnFechar" onclick="closePanel()"> X </button>
+            
+                <!-- Novo contêiner para itens do carrinho -->
+                <div id="itensCarrinho"></div>
+            </div>
         </div>
-    <p>Esse site é dificil de mexer</p>
+    <h2 class="tituloPag">Cuia</h2>
+    <img src="imagens/conteudo/cuia.jpg" class="imgPag" alt="">
+    <p class="textoPag">Feitas à mão com carinho e tradição, nossas cuias são perfeitas para saborear um tacacá. Escolha entre modelos tradicionais ou decorados e leve um pedacinho da Amazônia para casa!</p>
+    <p class="valorProdutoPag"> R$ 6,90 </p>
+    <a class="botaoComprarPag" href=""> <img class="cartGo" src="imagens/menu/cartGo.png"> Comprar agora </a>
+    <button class="botaoCarrinhoPag" onclick="adicionarCuia()"> <img class="cart" src="imagens/menu/cart.png"> Adicionar ao carrinho </button>
 </body>
 </html>

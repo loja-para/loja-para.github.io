@@ -14,12 +14,20 @@
             <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"> </a>
             <a href="index.html" class="textoMenu">Início</a>
             <a href="equipe.html" class="textoMenu">Equipe</a>
-            <a href="carrinho.html" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</a>
+            <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+            <div id="sidePanel" class="side-panel">
+                <!-- Botão de fechar permanece aqui -->
+                <button id="btnFechar" onclick="closePanel()"> X </button>
+            
+                <!-- Novo contêiner para itens do carrinho -->
+                <div id="itensCarrinho"></div>
+            </div>
         </div>
     <h2 class="tituloPag">Garrafinhas de Cheiro</h2>
     <img src="imagens/conteudo/garrafasCheiro.jpg" class="imgPag" alt="">
     <p class="textoPag">As garrafas para banho de cheiro são produzidas com carinho e expertise, trazendo o autêntico saber das erveiras do Ver-o-Peso.</p>
     <p class="valorProdutoPag"> R$ 3,50 </p>
     <a class="botaoComprarPag" href=""> <img class="cartGo" src="imagens/menu/cartGo.png"> Comprar agora </a>
+    <button class="botaoCarrinhoPag" onclick="adicionarGarrafa()"> <img class="cart" src="imagens/menu/cart.png"> Adicionar ao carrinho </button>
 </body>
 </html>
