@@ -50,19 +50,7 @@ function remover(item)
     {
         document.getElementById('botaoPagar').style.display = 'none';
     }
-    function showNotification() {
-    var notification = document.getElementById("notification");
-    notification.style.display = "block";
-    setTimeout(function(){
-        notification.style.display = "none";
-    }, 3000); // 3000 milliseconds = 3 seconds
-}
-
-var carrinho = [];
-
-function adicionarItemAoCarrinho(item) {
-    carrinho.push(item);
-    showNotification();
+   
 }
 
 }
