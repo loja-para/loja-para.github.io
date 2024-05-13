@@ -20,8 +20,8 @@ var carrinho = [];
 // Função para adicionar item ao carrinho
 function adicionarCarrinho(item)
 {
-   
-    
+    carrinho.push(item);
+    alert('Item adicionado ao carrinho');
 
     //mostra o item no carrinho
 
@@ -50,8 +50,4 @@ function remover(item)
     {
         document.getElementById('botaoPagar').style.display = 'none';
     }
-   
-}
-
-}
 }
