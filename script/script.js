@@ -20,7 +20,7 @@ var carrinho = [];
 // Função para adicionar item ao carrinho
 function adicionarCarrinho(item)
 {
-    carrinho.push(item);
+   
     
 
     //mostra o item no carrinho
