@@ -52,5 +52,37 @@ function remover(item)
     }
    
 }
+// Função para adicionar item ao carrinho
+function adicionarCarrinho(item)
+{
+    //mostra o item no carrinho
+    var mostrar = document.getElementById(item).style.display;
+    if ( mostrar == 'none' || mostrar == '' )
+    {
+        document.getElementById(item).style.display = 'block';
+        document.getElementById('botaoPagar').style.display = 'block';
 
+        // Alerta estilizado
+        Swal.fire({
+            icon: 'success',
+            title: 'Item adicionado ao carrinho',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    }
+}
+
+// Função para remover item do carrinho
+function remover(item)
+{
+    carrinho.pop(item);
+
+    // Alerta estilizado
+    Swal.fire({
+        icon: 'info',
+        title: 'Item removido do carrinho',
+        showConfirmButton: false,
+        timer: 1500
+    });
+}
 }
