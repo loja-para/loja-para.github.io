@@ -21,7 +21,7 @@ var carrinho = [];
 function adicionarCarrinho(item)
 {
     carrinho.push(item);
-    alert('Item adicionado ao carrinho');
+    
 
     //mostra o item no carrinho
 
