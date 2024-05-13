@@ -447,17 +447,3 @@ body{
     padding-bottom: 15px;
     font-weight: bold;
 }
-#notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
