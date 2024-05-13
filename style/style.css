@@ -1,3 +1,19 @@
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
 body{
     background-color: rgb(109, 90, 122);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
