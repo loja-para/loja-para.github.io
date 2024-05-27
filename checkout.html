@@ -8,7 +8,7 @@
     <script src="script/script.js"></script>
     <title>Checkout - Loja Pará</title>
 </head>
-<body>
+<body onload="displayCartItems()">
     <header>
         <div class="menu">
             <a href="index.html">
@@ -16,12 +16,17 @@
                 <a href="index.html" class="textoMenu">Início</a>
                 <a href="equipe.html" class="textoMenu">Equipe</a>
                 <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
-                <div id="sidePanel" class="side-panel">
-                <!-- Botão de fechar permanece aqui -->
-                <button id="btnFechar" onclick="closePanel()"> X </button>
+                    <div id="sidePanel" class="side-panel">
+                    <h2 class="carrinhoTitle">Carrinho</h2>
+                    <!-- Botão de fechar permanece aqui -->
+                    <button id="btnFechar" onclick="closePanel()"> X </button>
+                    <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
+                    <a href="checkout.html"> <button class="botaoPagar"> Ir Para Pagamento </button> </a>
             
-                <!-- Novo contêiner para itens do carrinho -->
-                <div id="itensCarrinho"></div>
+                    <!-- Novo contêiner para itens do carrinho -->
+                    <div id="itensCarrinho">
+                        <!-- Itens do carrinho serão inseridos aqui -->
+                    </div>
             </div>
         </div>
     </header>
