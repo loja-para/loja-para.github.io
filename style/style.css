@@ -1,3 +1,9 @@
+object
+{
+    width: 100%;
+    height: 200px;
+}
+
 #notification {
     position: fixed;
     top: 20px;
@@ -13,6 +19,18 @@
     display: none;
 }
 
+.botaoDousuario
+{
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    
+}
 
 body{
     background-color: rgb(109, 90, 122);
