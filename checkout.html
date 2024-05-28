@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="imagens/logo/icon.png" type="image/png">
+    <script src="script/script.js"></script>
+    <title>Checkout - Loja Pará</title>
+</head>
+<body onload="displayCartItems()">
+    <header>
+        <div class="menu">
+            <a href="index.html">
+                <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"> </a>
+                <a href="index.html" class="textoMenu">Início</a>
+                <a href="equipe.html" class="textoMenu">Equipe</a>
+                <div class="carrinhoMenu"> <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho</button> </div>
+                    <div id="sidePanel" class="side-panel">
+                    <h2 class="carrinhoTitle">Carrinho</h2>
+                    <!-- Botão de fechar permanece aqui -->
+                    <button id="btnFechar" onclick="closePanel()"> X </button>
+                    <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
+                    <a href="checkout.html"> <button class="botaoPagar"> Ir Para Pagamento </button> </a>
+            
+                    <!-- Novo contêiner para itens do carrinho -->
+                    <div id="itensCarrinho">
+                        <!-- Itens do carrinho serão inseridos aqui -->
+                    </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+</body>
+</html>

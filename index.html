@@ -9,6 +9,8 @@
     <title>Início - Loja Pará</title>
 </head>
 <body>
+    <div id="notification" class="hidden">
+    Item adicionado ao carrinho</div>
   <header>
     <div class="menu">
       <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
@@ -66,7 +68,8 @@
           <button class="botaoRemover" onclick="remover('vaso')">Remover</button>
         </div>
       </div>
-      <button class="botaoPagar"> Ir Para Pagamento </button>
+      <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
+      <a href="checkout.html"> <button class="botaoPagar"> Ir Para Pagamento </button> </a>
     </div>
 
     <!-- Conteúdo da página -->
@@ -79,7 +82,7 @@
                 <div class="card-body">
                   <p class="card-title">Garrafinhas de Cheiro</p>
                   <p class="card-text">As garrafas para banho de cheiro são produzidas com carinho e expertise, trazendo o autêntico saber das erveiras do Ver-o-Peso.</p>
-                  <a class="botaoComprar" href=""> <p class="valorProduto"> R$ 3,50 </p> Comprar <br> agora </a>
+                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 3,50 </p> Comprar <br> agora </a>
                   <button class="botaoCarrinho" onclick="adicionarCarrinho('garrafinhas')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
                 </div>
               </a>
@@ -90,7 +93,7 @@
                 <div class="card-body">
                   <p class="card-title">Cachaça de Jambu</p>
                   <p class="card-text">A cachaça de jambu é uma experiência sensorial única, onde o sabor natural do jambu se harmoniza com a pureza da cachaça.</p>
-                  <a class="botaoComprar" href=""> <p class="valorProduto"> R$ 7,90 </p> Comprar <br> agora </a>
+                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 7,90 </p> Comprar <br> agora </a>
                   <button class="botaoCarrinho" onclick="adicionarCarrinho('jambu')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
                 </div>
               </a>
@@ -104,7 +107,7 @@
                 <div class="card-body">
                   <p class="card-title">Barcos de Miriti</p>
                   <p class="card-text">Embarcações únicas, feitas à mão por artesãos habilidosos, capturam a essência da floresta e da cultura local. Explore nossa coleção e leve para casa um pedaço da magia amazônica!</p>
-                  <a class="botaoComprar" href=""> <p class="valorProduto"> R$ 5,90 </p> Comprar <br> agora </a>
+                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 5,90 </p> Comprar <br> agora </a>
                   <button class="botaoCarrinho" onclick="adicionarCarrinho('barco')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
                 </div>
               </a>
@@ -115,7 +118,7 @@
                 <div class="card-body">
                   <p class="card-title">Colar de Biojoias Amazônicas</p>
                   <p class="card-text">Explore a exuberância da Amazônia com colares que capturam a essência da floresta tropical! Criados com folhas e sementes naturais, cada peça é uma obra de arte sustentável.</p>
-                  <a class="botaoComprar" href=""> <p class="valorProduto"> R$ 9,90 </p> Comprar <br> agora </a>
+                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 9,90 </p> Comprar <br> agora </a>
                   <button class="botaoCarrinho" onclick="adicionarCarrinho('biojoia')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
                 </div>
               </a>
@@ -126,7 +129,7 @@
                 <div class="card-body">
                   <p class="card-title">Cuia</p>
                   <p class="card-text">Feitas à mão com carinho e tradição, nossas cuias são perfeitas para saborear um tacacá. Escolha entre modelos tradicionais ou decorados e leve um pedacinho da Amazônia para casa!</p>
-                  <a class="botaoComprar" href=""> <p class="valorProduto"> R$ 6,90 </p> Comprar <br> agora </a>
+                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 6,90 </p> Comprar <br> agora </a>
                   <button class="botaoCarrinho" onclick="adicionarCarrinho('cuia')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
                 </div>
               </a>
@@ -137,7 +140,7 @@
               <div class="card-body">
                 <p class="card-title">Vaso Regional Paraense</p>
                 <p class="card-text">Vasos únicos e autênticos produzidos artesanalmente em Icoaraci, Belém-PA, e trazem consigo a riqueza cultural e ancestralidade inspirada na cerâmica marajoara e tapajônica.</p>
-                <a class="botaoComprar" href=""> <p class="valorProduto"> R$ 29,90 </p> Comprar <br> agora </a>
+                <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 29,90 </p> Comprar <br> agora </a>
                 <button class="botaoCarrinho" onclick="adicionarCarrinho('vaso')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
               </div>
             </a>

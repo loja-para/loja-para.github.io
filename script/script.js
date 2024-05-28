@@ -1,3 +1,19 @@
+function showNotification() {
+    var notification = document.getElementById("notification");
+    notification.style.display = "block";
+    setTimeout(function(){
+        notification.style.display = "none";
+    }, 3000); // 3000 milliseconds = 3 seconds
+}
+
+var carrinho = [];
+
+function adicionarItemAoCarrinho(item) {
+    carrinho.push(item);
+    showNotification();
+}
+
+
 function openPanel() {
     document.getElementById('sidePanel').style.right = '0';
     if ( carrinho.length == 0 )
