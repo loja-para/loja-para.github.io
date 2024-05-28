@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>usuário</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
+            <a href="index.html" class="textoMenu">Início</a>
+            <a href="equipe.html" class="textoMenu">Equipe</a>
+            <div class="carrinhoMenu">
+              <button onclick="openPanel()" class="textoMenu"> <img class="cartMenu" src="imagens/menu/cartMenu.png"> Carrinho </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="sidePanel" class="side-panel">
+            <h2 class="carrinhoTitle">Carrinho</h2>
+            <button id="btnFechar" onclick="closePanel()"> X </button>
+            <div class="itens-carrinho">
+                <div class="itensCarrinho" id="garrafinhas" style="display: none;">
+                    <img src="imagens/conteudo/garrafasCheiro.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Garrafinhas de Cheiro</p>
+                    <p class="valorProduto">R$ 3,50</p>
+                    <button class="botaoRemover" onclick="remover('garrafinhas')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="jambu" style="display: none;">
+                    <img src="imagens/conteudo/cachacaJambu.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Cachaça de Jambu</p>
+                    <p class="valorProduto">R$ 7,90</p>
+                    <button class="botaoRemover" onclick="remover('jambu')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="barco" style="display: none;">
+                    <img src="imagens/conteudo/barcosMiriti.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Barcos de Miriti</p>
+                    <p class="valorProduto">R$ 5,90</p>
+                    <button class="botaoRemover" onclick="remover('barco')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="biojoia" style="display: none;">
+                    <img src="imagens/conteudo/colarBiojoias.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
+                    <p class="valorProduto">R$ 9,90</p>
+                    <button class="botaoRemover" onclick="remover('biojoia')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="cuia" style="display: none;">
+                    <img src="imagens/conteudo/cuia.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Cuia</p>
+                    <p class="valorProduto">R$ 6,90</p>
+                    <button class="botaoRemover" onclick="remover('cuia')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="vaso" style="display: none;">
+                    <img src="imagens/conteudo/vasoRegional.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Vaso Regional Paraense</p>
+                    <p class="valorProduto">R$ 29,90</p>
+                    <button class="botaoRemover" onclick="remover('vaso')">Remover</button>
+                </div>
+            </div>
+            <button class="botaoPagar"> Ir Para Pagamento </button>
+        </div>
+        
+    </main>
+</body>
+<script src="script/script.js"></script>
+</html>
