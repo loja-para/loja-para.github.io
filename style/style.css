@@ -461,7 +461,7 @@ body{
 .valorProduto{
     font-weight: bold;
     color: white;
-    margin-left: 10px;
+    margin-right: 5px;
 }
 .botaoRemover{
     border-radius: 5px;
