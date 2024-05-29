@@ -8,7 +8,21 @@
     <title>Página do Usuário - Loja Pará</title>
 </head>
 <body>
-    <iframe src="cabeca.html" class="cabecalho"></iframe>
+    <header>
+        <div class="menu">
+          <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
+          <a href="index.html" class="textoMenu" target="_parent">Início</a>
+          <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
+          <div class="carrinhoMenu">
+            <button onclick="openPanel()" class="textoMenu" target="_parent">
+              <img class="cartMenu" src="imagens/menu/cartMenu.png">
+              <p style="font-size: 14px;">Carrinho</p>
+            </button>
+          </div>
+          <div class="vazio"></div>
+          <a href="usuario.html" class="textoMenu" target="_parent"> <img src="imagens/menu/personIcon.png" class="iconePessoa" > Seu usuario</a> 
+        </div>
+    </header>
     <main>
         <div id="sidePanel" class="side-panel">
             <h2 class="carrinhoTitle">Carrinho</h2>
@@ -51,11 +65,13 @@
                     <button class="botaoRemover" onclick="remover('vaso')">Remover</button>
                 </div>
             </div>
+
             <button class="botaoPagar"> Ir Para Pagamento </button>
+
         </div>
 
-        
     </main>
+
 </body>
 <script src="script/script.js"></script>
 </html>

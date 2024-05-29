@@ -9,16 +9,79 @@
     <title>Equipe - Loja Pará</title>
 </head>
 <body>  
-    <iframe src="cabeca.html" class="cabecalho"></iframe>
-<fieldset class="alunos">
-    <legend>Equipe</legend>
-    <h3>Front-end: </h3>
-    <p class="aluno">Aluno: Matheus Valadares do Mar Martins <br> Matrícula: 202404170314</p>
-    <h3>Back-end: </h3>
-    <p class="aluno">Aluno: Henrique de Albuquerque Leite <br> Matrícula: 202403481898</p>
-    <p class="aluno">Aluno: Luiz Cláudio de Souza Brito <br> Matrícula: 202404106179</p>
-    <h3>Relatório: </h3>
-    <p class="aluno">Aluna: Jéssica Freire de Carvalho <br> Matrícula: 202404170527</p>
-</fieldset>
+    <header>
+        <div class="menu">
+            <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
+            <a href="index.html" class="textoMenu" target="_parent">Início</a>
+            <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
+            <div class="carrinhoMenu">
+                <button onclick="openPanel()" class="textoMenu" target="_parent">
+                    <img class="cartMenu" src="imagens/menu/cartMenu.png">
+                    <p style="font-size: 14px;">Carrinho</p>
+                </button>
+            </div>
+            <div class="vazio"></div>
+            <a href="usuario.html" class="textoMenu" target="_parent"> <img src="imagens/menu/personIcon.png" class="iconePessoa" > Seu usuario</a> 
+        </div>
+    </header>
+    <main>
+        
+        <div id="sidePanel" class="side-panel">
+            <h2 class="carrinhoTitle">Carrinho</h2>
+            <button id="btnFechar" onclick="closePanel()"> X </button>
+            <div class="itens-carrinho">
+                <div class="itensCarrinho" id="garrafinhas" style="display: none;">
+                    <img src="imagens/conteudo/garrafasCheiro.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Garrafinhas de Cheiro</p>
+                    <p class="valorProduto">R$ 3,50</p>
+                    <button class="botaoRemover" onclick="remover('garrafinhas')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="jambu" style="display: none;">
+                    <img src="imagens/conteudo/cachacaJambu.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Cachaça de Jambu</p>
+                    <p class="valorProduto">R$ 7,90</p>
+                    <button class="botaoRemover" onclick="remover('jambu')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="barco" style="display: none;">
+                    <img src="imagens/conteudo/barcosMiriti.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Barcos de Miriti</p>
+                    <p class="valorProduto">R$ 5,90</p>
+                    <button class="botaoRemover" onclick="remover('barco')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="biojoia" style="display: none;">
+                    <img src="imagens/conteudo/colarBiojoias.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
+                    <p class="valorProduto">R$ 9,90</p>
+                    <button class="botaoRemover" onclick="remover('biojoia')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="cuia" style="display: none;">
+                    <img src="imagens/conteudo/cuia.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Cuia</p>
+                    <p class="valorProduto">R$ 6,90</p>
+                    <button class="botaoRemover" onclick="remover('cuia')">Remover</button>
+                </div>
+                <div class="itensCarrinho" id="vaso" style="display: none;">
+                    <img src="imagens/conteudo/vasoRegional.jpg" class="imgCarrinho" alt="">
+                    <p class="nomeProduto">Vaso Regional Paraense</p>
+                    <p class="valorProduto">R$ 29,90</p>
+                    <button class="botaoRemover" onclick="remover('vaso')">Remover</button>
+                </div>
+            </div>
+
+            <button class="botaoPagar"> Ir Para Pagamento </button>
+
+        </div>
+
+        <fieldset class="alunos">
+            <legend>Equipe</legend>
+            <h3>Front-end: </h3>
+            <p class="aluno">Aluno: Matheus Valadares do Mar Martins <br> Matrícula: 202404170314</p>
+            <h3>Back-end: </h3>
+            <p class="aluno">Aluno: Henrique de Albuquerque Leite <br> Matrícula: 202403481898</p>
+            <p class="aluno">Aluno: Luiz Cláudio de Souza Brito <br> Matrícula: 202404106179</p>
+            <h3>Relatório: </h3>
+            <p class="aluno">Aluna: Jéssica Freire de Carvalho <br> Matrícula: 202404170527</p>
+        </fieldset>
+    </main>
 </body>
 </html>
