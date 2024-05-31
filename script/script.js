@@ -1,20 +1,25 @@
-function showNotification() {
+function showNotification()
+{
     var notification = document.getElementById("notification");
     notification.style.display = "block";
-    setTimeout(function(){
+    setTimeout(function()
+    {
         notification.style.display = "none";
-    }, 3000); // 3000 milliseconds = 3 seconds
+    },
+    3000); // 3000 milliseconds = 3 seconds
 }
 
 var carrinho = [];
 
-function adicionarItemAoCarrinho(item) {
+function adicionarItemAoCarrinho(item)
+{
     carrinho.push(item);
     showNotification();
 }
 
 
-function openPanel() {
+function openPanel()
+{
     document.getElementById('sidePanel').style.right = '0';
     if ( carrinho.length == 0 )
     {
@@ -26,7 +31,8 @@ function openPanel() {
     }
 }
 
-function closePanel() {
+function closePanel()
+{
     document.getElementById('sidePanel').style.right = '-400px';
 }
 
