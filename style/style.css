@@ -560,12 +560,26 @@ body{
     font-size: 25px;
 }
 
+.rodapePainel
+{
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    height: 50px;
+    background-color: rgb(206, 161, 240);
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
 .totalCompra{
     margin-left: 10px;
     font-weight: bold;
     color: rgb(0, 0, 0);
     position: absolute;
     bottom: 0;
+    align-items: center;
 }
 
 .botaoPagar{
