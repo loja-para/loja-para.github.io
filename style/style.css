@@ -22,10 +22,12 @@ body{
     background-color: rgb(109, 90, 122);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .logo{
     width: 135px;
     height: 90px;
 }
+
 @media (max-width: 615px) {
     .logo {
         width: 100px;
@@ -35,6 +37,7 @@ body{
     }
 }
 
+
 .menu{
     overflow: hidden;
     align-items: center;
@@ -43,6 +46,7 @@ body{
     margin-left: 10%;
     margin-bottom: 5px;
 }
+
 @media (max-width: 615px) {
     .menu {
         align-items: center;
@@ -53,6 +57,7 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .textoMenu{
     align-items: center;
     display: flex;
@@ -64,6 +69,7 @@ body{
     background-color: transparent;
     border: none;
 }
+
 @media (max-width: 615px) {
     .textoMenu {
         align-items: center;
@@ -80,9 +86,11 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .vazio{
     width: 42%;
 }
+
 .iconePessoa
 {
     margin-right: 8px;
@@ -90,6 +98,7 @@ body{
     border: white 3px solid;
     border-radius: 50%;
 }
+
 .botaoUsuario{
     position: absolute;
     right: 100px;
@@ -101,12 +110,14 @@ body{
     align-items: center;
     display: flex;
 }
+
 .card-img-top{
     border-radius: 10px;
     width: 300px;
     height: 200px;
     object-fit: cover;
 }
+
 @media (max-width: 615px) {
     .card-img-top {
         border-radius: 10px;
@@ -116,10 +127,12 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .ancora{
     background-color: rgb(123, 123, 216);
     border-radius: 5px;
 }
+
 .card{
     margin-left: 5px;
     margin-right: 5px;
@@ -130,6 +143,7 @@ body{
     margin-bottom: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
 @media (max-width: 615px) {
     .card {
         margin-left: 5px;
@@ -143,6 +157,7 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .card2{
     margin-left: 5px;
     margin-right: 5px;
@@ -153,6 +168,7 @@ body{
     margin-bottom: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
 @media (max-width: 615px) {
     .card2 {
         margin-left: 5px;
@@ -166,16 +182,19 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .card-title{
     font-weight: bold;
     margin-left: 5px;
     size: 30px;
 }
+
 .card-text{
     margin-left: 7px;
     margin-right: 9px;
     text-align: justify;
 }
+
 @media (max-width: 615px) {
     .card-text {
         font-size: small;
@@ -185,9 +204,11 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .botoes{
     margin-left: 5px;
 }
+
 .card-container1 {
     display: flex;
     justify-content: space-between;
@@ -196,6 +217,7 @@ body{
     margin-right: auto;
     overflow-x: auto;
 }
+
 @media (max-width: 615px) {
     .card-container1 {
         display: flex;
@@ -207,6 +229,7 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .card-container2 {
     display: flex;
     justify-content: space-between;
@@ -215,15 +238,18 @@ body{
     margin-right: auto;
     overflow-x: auto;
 }
+
 .categoria{
     text-align: center;
 }
+
 .cart{
     margin-right: 8px;
     margin-bottom: 5px;
     height: 30px;
     width: auto;
 }
+
 @media (max-width: 615px) {
     .cart {
         margin-right: 8px;
@@ -232,11 +258,13 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .cartGo{
     margin-right: 8px;
     height: 35px;
     width: auto;
 }
+
 @media (max-width: 615px) {
     .cartGo {
         margin-right: 8px;
@@ -245,11 +273,13 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .cartMenu{
     margin-right: 8px;
     height: 30px;
     width: auto;
 }
+
 .botaoComprar{
     height: 37px;
     border-radius: 5px;
@@ -266,6 +296,7 @@ body{
     padding: 5px;
     font-weight: bold;
 }
+
 @media (max-width: 615px) {
     .botaoComprar {
         width: 130px;
@@ -284,6 +315,7 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .botaoCarrinho{
     height: 48px;
     width: 125px;
@@ -302,14 +334,17 @@ body{
     border: none;
     transition: background-color 0.3s ease;
 }
+
 .botaoCarrinho:hover {
     background-color: rgb(93, 93, 186);
 }
+
 .botaoCarrinho:active {
     background-color: rgb(63, 63, 156);
     transform: scale(0.95); /* Faz o botão parecer pressionado */
     transition: background-color 0.1s ease, transform 0.1s ease;
 }
+
 @media (max-width: 615px) {
     .botaoCarrinho {
         width: 130px;
@@ -329,10 +364,12 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .linkMais{
     text-decoration: none;
     color: inherit;
 }
+
 .alunos{
     margin-left: 10%;
     margin-right: 10%;
@@ -342,12 +379,14 @@ body{
     font-weight: bold;
     margin-top: 10px;
 }
+
 .tituloPag{
     margin-left: 5%;
     color: white;
     font-weight: bold;
     margin-top: 20px;
 }
+
 .imgPag{
     margin-left: 5%;
     margin-top: 20px;
@@ -355,6 +394,7 @@ body{
     height: 350px;
     object-fit: cover;
 }
+
 @media (max-width: 615px) {
     .imgPag {
         margin-left: 5%;
@@ -366,6 +406,7 @@ body{
         /* outros estilos para mobile */
     }
 }
+
 .textoPag{
     width: 600px;
     margin-left: 5%;
@@ -373,11 +414,13 @@ body{
     margin-top: 20px;
     color: white;
 }
+
 .valorProdutoMenu{
     margin-right: 50px;
     font-size: smaller;
     text-decoration: none;
 }
+
 .valorProdutoPag {
     position: absolute;
     top: 100px;
@@ -386,6 +429,7 @@ body{
     font-weight: bold;
     color: white;
 }
+
 .botaoComprarPag{
     position: absolute;
     top: 158px;
@@ -403,6 +447,7 @@ body{
     padding: 5px;
     font-weight: bold;
 }
+
 .botaoCarrinhoPag{
     position: absolute;
     top: 210px;
@@ -423,14 +468,17 @@ body{
     border: none;
     transition: background-color 0.3s ease;
 }
+
 .botaoCarrinhoPag:hover {
     background-color: rgb(93, 93, 186);
 }
+
 .botaoCarrinhoPag:active {
     background-color: rgb(63, 63, 156);
     transform: scale(0.95); /* Faz o botão parecer pressionado */
     transition: background-color 0.1s ease, transform 0.1s ease;
 }
+
 .side-panel {
     position: fixed;
     z-index: 9999;
@@ -441,6 +489,7 @@ body{
     background-color: rgb(206, 161, 240);
     transition: right 0.3s; /* Animação para deslizar para dentro e para fora */
 }
+
 .itens-carrinho{
     font-weight: bold;
     padding: 10px;
@@ -448,22 +497,26 @@ body{
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .imgCarrinho{
     border-radius: 5px;
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
+
 .nomeProduto{
     font-weight: bold;
     color: white;
     margin-left: 10px;
 }
+
 .valorProduto{
     font-weight: bold;
     color: white;
     margin-right: 5px;
 }
+
 .botaoRemover{
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
@@ -477,20 +530,24 @@ body{
     padding: 5px;
     font-weight: bold;
 }
+
 .botaoRemover:hover {
     background-color: rgb(187, 187, 187);
 }
+
 .botaoRemover:active {
     background-color: rgb(147, 128, 148);
     transform: scale(0.95); /* Faz o botão parecer pressionado */
     transition: background-color 0.1s ease, transform 0.1s ease;
 }
+
 .carrinhoTitle{
     text-align: center;
     font-weight: bold;
     color: white;
     margin-top: 20px;
 }
+
 #btnFechar{
     position: absolute;
     top: 10px;
@@ -502,6 +559,7 @@ body{
     font-weight: bold;
     font-size: 25px;
 }
+
 .totalCompra{
     margin-left: 10px;
     font-weight: bold;
@@ -509,6 +567,7 @@ body{
     position: absolute;
     bottom: 0;
 }
+
 .botaoPagar{
     position: absolute;
     bottom: 10px;
@@ -527,6 +586,7 @@ body{
     padding-bottom: 15px;
     font-weight: bold;
 }
+
 .cabecalho{
     height: 120px;
     width: 100%;
