@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="imagens/logo/icon.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="imagens/logo/icon.png" type="image/png" />
     <script src="script/script.js"></script>
     <title>Checkout - Loja Pará</title>
-</head>
-<body onload="displayCartItems()">
+  </head>
+  <body onload="displayCartItems()">
     <header>
-        <div class="menu">
-            <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
-            <a href="index.html" class="textoMenu" target="_parent">Início</a>
-            <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
-            <div class="carrinhoMenu">
-                <button onclick="openPanel()" class="textoMenu" target="_parent">
-                    <img class="cartMenu" src="imagens/menu/cartMenu.png">
-                    <p style="font-size: 14px;">Carrinho</p>
-                </button>
-            </div>
-            <div class="vazio"></div>
-            <a href="usuario.html" class="textoMenu" target="_parent"> <img src="imagens/menu/personIcon.png" class="iconePessoa" > Seu usuario</a> 
+      <div class="menu">
+        <img src="imagens/logo/transpLiso.png" alt="logo" class="logo" />
+        <a href="index.html" class="textoMenu" target="_parent">Início</a>
+        <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
+        <div class="carrinhoMenu">
+          <button onclick="openPanel()" class="textoMenu" target="_parent">
+            <img class="cartMenu" src="imagens/menu/cartMenu.png" />
+            <p style="font-size: 14px">Carrinho</p>
+          </button>
         </div>
+        <div class="vazio"></div>
+        <a href="usuario.html" class="textoMenu" target="_parent">
+          <img src="imagens/menu/personIcon.png" class="iconePessoa" /> Seu
+          usuario</a
+        >
+      </div>
     </header>
-        <div id="sidePanel" class="side-panel">
-            <h2 class="carrinhoTitle">Carrinho</h2>
-            <!-- Botão de fechar permanece aqui -->
-            <button id="btnFechar" onclick="closePanel()"> X </button>
-            <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
-            <a href="checkout.html"> <button class="botaoPagar"> Ir Para Pagamento </button> </a>
+    <div id="sidePanel" class="side-panel">
+      <h2 class="carrinhoTitle">Carrinho</h2>
+      <!-- Botão de fechar permanece aqui -->
+      <button id="btnFechar" onclick="closePanel()">X</button>
+      <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
+      <a href="checkout.html">
+        <button class="botaoPagar">Ir Para Pagamento</button>
+      </a>
 
-            <!-- Novo contêiner para itens do carrinho -->
-            <div id="itensCarrinho">
-                <!-- Itens do carrinho serão inseridos aqui -->
-            </div>
-        </div>
-</body>
+      <!-- Novo contêiner para itens do carrinho -->
+      <div id="itensCarrinho">
+        <!-- Itens do carrinho serão inseridos aqui -->
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,158 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="imagens/logo/icon.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="imagens/logo/icon.png" type="image/png" />
     <script src="script/script.js"></script>
     <title>Início - Loja Pará</title>
-</head>
-<body>
-  <div id="notification" class="hidden">
-  Item adicionado ao carrinho</div>
-  <header>
-    <div class="menu">
-      <img src="imagens/logo/transpLiso.png" alt="logo" class="logo">
-      <a href="index.html" class="textoMenu" target="_parent">Início</a>
-      <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
-      <div class="carrinhoMenu">
-        <button onclick="openPanel()" class="textoMenu" target="_parent">
-          <img class="cartMenu" src="imagens/menu/cartMenu.png">
-          <p style="font-size: 14px;">Carrinho</p>
-        </button>
+  </head>
+  <body>
+    <div id="notification" class="hidden">Item adicionado ao carrinho</div>
+    <header>
+      <div class="menu">
+        <img src="imagens/logo/transpLiso.png" alt="logo" class="logo" />
+        <a href="index.html" class="textoMenu" target="_parent">Início</a>
+        <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
+        <div class="carrinhoMenu">
+          <button onclick="openPanel()" class="textoMenu" target="_parent">
+            <img class="cartMenu" src="imagens/menu/cartMenu.png" />
+            <p style="font-size: 14px">Carrinho</p>
+          </button>
+        </div>
+        <div class="vazio"></div>
+        <a href="usuario.html" class="textoMenu" target="_parent">
+          <img src="imagens/menu/personIcon.png" class="iconePessoa" /> Seu
+          usuario</a
+        >
       </div>
-      <div class="vazio"></div>
-      <a href="usuario.html" class="textoMenu" target="_parent"> <img src="imagens/menu/personIcon.png" class="iconePessoa" > Seu usuario</a> 
-    </div>
-  </header>
+    </header>
 
-  <main>
-    
-    <div id="sidePanel" class="side-panel">
-      <h2 class="carrinhoTitle">Carrinho</h2>
-      <!-- Botão de fechar permanece aqui -->
-      <button id="btnFechar" onclick="closePanel()"> X </button>
+    <main>
+      <div id="sidePanel" class="side-panel">
+        <h2 class="carrinhoTitle">Carrinho</h2>
+        <!-- Botão de fechar permanece aqui -->
+        <button id="btnFechar" onclick="closePanel()">X</button>
 
-      <!-- Itens do carrinho -->
-      <div class="itens-carrinho">
-        <div class="itensCarrinho" id="garrafinhas" style="display: none;">
-          <img src="imagens/conteudo/garrafasCheiro.jpg" class="imgCarrinho" alt="">
-          <p class="nomeProduto">Garrafinhas de Cheiro</p>
-          <p class="valorProduto">R$ 3,50</p>
-          <button class="botaoRemover" onclick="remover('garrafinhas')">Remover</button>
+        <!-- Itens do carrinho -->
+        <div class="itens-carrinho">
+          <div class="itensCarrinho" id="garrafinhas" style="display: none">
+            <img
+              src="imagens/conteudo/garrafasCheiro.jpg"
+              class="imgCarrinho"
+              alt=""
+            />
+            <p class="nomeProduto">Garrafinhas de Cheiro</p>
+            <p class="valorProduto">R$ 3,50</p>
+            <button class="botaoRemover" onclick="remover('garrafinhas')">
+              Remover
+            </button>
+          </div>
+          <div class="itensCarrinho" id="jambu" style="display: none">
+            <img
+              src="imagens/conteudo/cachacaJambu.jpg"
+              class="imgCarrinho"
+              alt=""
+            />
+            <p class="nomeProduto">Cachaça de Jambu</p>
+            <p class="valorProduto">R$ 7,90</p>
+            <button class="botaoRemover" onclick="remover('jambu')">
+              Remover
+            </button>
+          </div>
+          <div class="itensCarrinho" id="barco" style="display: none">
+            <img
+              src="imagens/conteudo/barcosMiriti.jpg"
+              class="imgCarrinho"
+              alt=""
+            />
+            <p class="nomeProduto">Barcos de Miriti</p>
+            <p class="valorProduto">R$ 5,90</p>
+            <button class="botaoRemover" onclick="remover('barco')">
+              Remover
+            </button>
+          </div>
+          <div class="itensCarrinho" id="biojoia" style="display: none">
+            <img
+              src="imagens/conteudo/colarBiojoias.jpg"
+              class="imgCarrinho"
+              alt=""
+            />
+            <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
+            <p class="valorProduto">R$ 9,90</p>
+            <button class="botaoRemover" onclick="remover('biojoia')">
+              Remover
+            </button>
+          </div>
+          <div class="itensCarrinho" id="cuia" style="display: none">
+            <img src="imagens/conteudo/cuia.jpg" class="imgCarrinho" alt="" />
+            <p class="nomeProduto">Cuia</p>
+            <p class="valorProduto">R$ 6,90</p>
+            <button class="botaoRemover" onclick="remover('cuia')">
+              Remover
+            </button>
+          </div>
+          <div class="itensCarrinho" id="vaso" style="display: none">
+            <img
+              src="imagens/conteudo/vasoRegional.jpg"
+              class="imgCarrinho"
+              alt=""
+            />
+            <p class="nomeProduto">Vaso Regional Paraense</p>
+            <p class="valorProduto">R$ 29,90</p>
+            <button class="botaoRemover" onclick="remover('vaso')">
+              Remover
+            </button>
+          </div>
         </div>
-        <div class="itensCarrinho" id="jambu" style="display: none;">
-          <img src="imagens/conteudo/cachacaJambu.jpg" class="imgCarrinho" alt="">
-          <p class="nomeProduto">Cachaça de Jambu</p>
-          <p class="valorProduto">R$ 7,90</p>
-          <button class="botaoRemover" onclick="remover('jambu')">Remover</button>
-        </div>
-        <div class="itensCarrinho" id="barco" style="display: none;">
-          <img src="imagens/conteudo/barcosMiriti.jpg" class="imgCarrinho" alt="">
-          <p class="nomeProduto">Barcos de Miriti</p>
-          <p class="valorProduto">R$ 5,90</p>
-          <button class="botaoRemover" onclick="remover('barco')">Remover</button>
-        </div>
-        <div class="itensCarrinho" id="biojoia" style="display: none;">
-          <img src="imagens/conteudo/colarBiojoias.jpg" class="imgCarrinho" alt="">
-          <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
-          <p class="valorProduto">R$ 9,90</p>
-          <button class="botaoRemover" onclick="remover('biojoia')">Remover</button>
-        </div>
-        <div class="itensCarrinho" id="cuia" style="display: none;">
-          <img src="imagens/conteudo/cuia.jpg" class="imgCarrinho" alt="">
-          <p class="nomeProduto">Cuia</p>
-          <p class="valorProduto">R$ 6,90</p>
-          <button class="botaoRemover" onclick="remover('cuia')">Remover</button>
-        </div>
-        <div class="itensCarrinho" id="vaso" style="display: none;">
-          <img src="imagens/conteudo/vasoRegional.jpg" class="imgCarrinho" alt="">
-          <p class="nomeProduto">Vaso Regional Paraense</p>
-          <p class="valorProduto">R$ 29,90</p>
-          <button class="botaoRemover" onclick="remover('vaso')">Remover</button>
-        </div>
+        <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
+        <a href="checkout.html">
+          <button class="botaoPagar">Ir Para Pagamento</button>
+        </a>
       </div>
-      <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
-      <a href="checkout.html"> <button class="botaoPagar"> Ir Para Pagamento </button> </a>
-    </div>
 
-    <!-- Conteúdo da página -->
-    <div>
-      <h2 class="categoria">Veropa em Casa</h2>
-      <div class="card-container1">
+      <!-- Conteúdo da página -->
+      <div>
+        <h2 class="categoria">Veropa em Casa</h2>
+        <div class="card-container1">
           <div class="card">
-              <a class="linkMais" href="maisGarrafasCheiro.html">
-                <img src="imagens/conteudo/garrafasCheiro.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-title">Garrafinhas de Cheiro</p>
-                  <p class="card-text">As garrafas para banho de cheiro são produzidas com carinho e expertise, trazendo o autêntico saber das erveiras do Ver-o-Peso.</p>
-                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 3,50 </p> Comprar <br> agora </a>
-                  <button class="botaoCarrinho" onclick="adicionarCarrinho('garrafinhas')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
-                </div>
-              </a>
-          </div>
-          <div class="card">
-              <a class="linkMais" href="maisCachacaJambu.html">
-                <img src="imagens/conteudo/cachacaJambu.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-title">Cachaça de Jambu</p>
-                  <p class="card-text">A cachaça de jambu é uma experiência sensorial única, onde o sabor natural do jambu se harmoniza com a pureza da cachaça.</p>
-                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 7,90 </p> Comprar <br> agora </a>
-                  <button class="botaoCarrinho" onclick="adicionarCarrinho('jambu')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
-                </div>
-              </a>
-          </div>
-      </div>
-      <br> <h2 class="categoria">Artesanato</h2>
-      <div class="card-container2">
-          <div class="card2">
-              <a class="linkMais" href="maisBarcoMiriti.html">
-                <img src="imagens/conteudo/barcosMiriti.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-title">Barcos de Miriti</p>
-                  <p class="card-text">Embarcações únicas, feitas à mão por artesãos habilidosos, capturam a essência da floresta e da cultura local. Explore nossa coleção e leve para casa um pedaço da magia amazônica!</p>
-                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 5,90 </p> Comprar <br> agora </a>
-                  <button class="botaoCarrinho" onclick="adicionarCarrinho('barco')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
-                </div>
-              </a>
-          </div>
-          <div class="card2">
-              <a class="linkMais" href="maisBiojoia.html">
-                <img src="imagens/conteudo/colarBiojoias.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-title">Colar de Biojoias Amazônicas</p>
-                  <p class="card-text">Explore a exuberância da Amazônia com colares que capturam a essência da floresta tropical! Criados com folhas e sementes naturais, cada peça é uma obra de arte sustentável.</p>
-                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 9,90 </p> Comprar <br> agora </a>
-                  <button class="botaoCarrinho" onclick="adicionarCarrinho('biojoia')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
-                </div>
-              </a>
-          </div>
-          <div class="card2">
-              <a class="linkMais" href="maisCuia.html">
-                <img src="imagens/conteudo/cuia.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-title">Cuia</p>
-                  <p class="card-text">Feitas à mão com carinho e tradição, nossas cuias são perfeitas para saborear um tacacá. Escolha entre modelos tradicionais ou decorados e leve um pedacinho da Amazônia para casa!</p>
-                  <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 6,90 </p> Comprar <br> agora </a>
-                  <button class="botaoCarrinho" onclick="adicionarCarrinho('cuia')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
-                </div>
-              </a>
-          </div>
-          <div class="card2">
-            <a class="linkMais" href="maisVaso.html">
-              <img src="imagens/conteudo/vasoRegional.jpg" class="card-img-top" alt="">
+            <a class="linkMais" href="maisGarrafasCheiro.html">
+              <img
+                src="imagens/conteudo/garrafasCheiro.jpg"
+                class="card-img-top"
+                alt=""
+              />
               <div class="card-body">
-                <p class="card-title">Vaso Regional Paraense</p>
-                <p class="card-text">Vasos únicos e autênticos produzidos artesanalmente em Icoaraci, Belém-PA, e trazem consigo a riqueza cultural e ancestralidade inspirada na cerâmica marajoara e tapajônica.</p>
-                <a class="botaoComprar" href="checkout.html"> <p class="valorProduto"> R$ 29,90 </p> Comprar <br> agora </a>
-                <button class="botaoCarrinho" onclick="adicionarCarrinho('vaso')"> <img class="cart" src="imagens/menu/cart.png"> Adicionar <br> ao carrinho </button>
+                <p class="card-title">Garrafinhas de Cheiro</p>
+                <p class="card-text">
+                  As garrafas para banho de cheiro são produzidas com carinho e
+                  expertise, trazendo o autêntico saber das erveiras do
+                  Ver-o-Peso.
+                </p>
+                <a class="botaoComprar" href="checkout.html">
+                  <p class="valorProduto">R$ 3,50</p>
+                  Comprar <br />
+                  agora
+                </a>
+                <button
+                  class="botaoCarrinho"
+                  onclick="adicionarCarrinho('garrafinhas')"
+                >
+                  <img class="cart" src="imagens/menu/cart.png" /> Adicionar
+                  <br />
+                  ao carrinho
+                </button>
               </div>
             </a>
           </div>
+          <div class="card">
+            <a class="linkMais" href="maisCachacaJambu.html">
+              <img
+                src="imagens/conteudo/cachacaJambu.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-title">Cachaça de Jambu</p>
+                <p class="card-text">
+                  A cachaça de jambu é uma experiência sensorial única, onde o
+                  sabor natural do jambu se harmoniza com a pureza da cachaça.
+                </p>
+                <a class="botaoComprar" href="checkout.html">
+                  <p class="valorProduto">R$ 7,90</p>
+                  Comprar <br />
+                  agora
+                </a>
+                <button
+                  class="botaoCarrinho"
+                  onclick="adicionarCarrinho('jambu')"
+                >
+                  <img class="cart" src="imagens/menu/cart.png" /> Adicionar
+                  <br />
+                  ao carrinho
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br />
+        <h2 class="categoria">Artesanato</h2>
+        <div class="card-container2">
+          <div class="card2">
+            <a class="linkMais" href="maisBarcoMiriti.html">
+              <img
+                src="imagens/conteudo/barcosMiriti.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-title">Barcos de Miriti</p>
+                <p class="card-text">
+                  Embarcações únicas, feitas à mão por artesãos habilidosos,
+                  capturam a essência da floresta e da cultura local. Explore
+                  nossa coleção e leve para casa um pedaço da magia amazônica!
+                </p>
+                <a class="botaoComprar" href="checkout.html">
+                  <p class="valorProduto">R$ 5,90</p>
+                  Comprar <br />
+                  agora
+                </a>
+                <button
+                  class="botaoCarrinho"
+                  onclick="adicionarCarrinho('barco')"
+                >
+                  <img class="cart" src="imagens/menu/cart.png" /> Adicionar
+                  <br />
+                  ao carrinho
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="card2">
+            <a class="linkMais" href="maisBiojoia.html">
+              <img
+                src="imagens/conteudo/colarBiojoias.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-title">Colar de Biojoias Amazônicas</p>
+                <p class="card-text">
+                  Explore a exuberância da Amazônia com colares que capturam a
+                  essência da floresta tropical! Criados com folhas e sementes
+                  naturais, cada peça é uma obra de arte sustentável.
+                </p>
+                <a class="botaoComprar" href="checkout.html">
+                  <p class="valorProduto">R$ 9,90</p>
+                  Comprar <br />
+                  agora
+                </a>
+                <button
+                  class="botaoCarrinho"
+                  onclick="adicionarCarrinho('biojoia')"
+                >
+                  <img class="cart" src="imagens/menu/cart.png" /> Adicionar
+                  <br />
+                  ao carrinho
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="card2">
+            <a class="linkMais" href="maisCuia.html">
+              <img
+                src="imagens/conteudo/cuia.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-title">Cuia</p>
+                <p class="card-text">
+                  Feitas à mão com carinho e tradição, nossas cuias são
+                  perfeitas para saborear um tacacá. Escolha entre modelos
+                  tradicionais ou decorados e leve um pedacinho da Amazônia para
+                  casa!
+                </p>
+                <a class="botaoComprar" href="checkout.html">
+                  <p class="valorProduto">R$ 6,90</p>
+                  Comprar <br />
+                  agora
+                </a>
+                <button
+                  class="botaoCarrinho"
+                  onclick="adicionarCarrinho('cuia')"
+                >
+                  <img class="cart" src="imagens/menu/cart.png" /> Adicionar
+                  <br />
+                  ao carrinho
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="card2">
+            <a class="linkMais" href="maisVaso.html">
+              <img
+                src="imagens/conteudo/vasoRegional.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-title">Vaso Regional Paraense</p>
+                <p class="card-text">
+                  Vasos únicos e autênticos produzidos artesanalmente em
+                  Icoaraci, Belém-PA, e trazem consigo a riqueza cultural e
+                  ancestralidade inspirada na cerâmica marajoara e tapajônica.
+                </p>
+                <a class="botaoComprar" href="checkout.html">
+                  <p class="valorProduto">R$ 29,90</p>
+                  Comprar <br />
+                  agora
+                </a>
+                <button
+                  class="botaoCarrinho"
+                  onclick="adicionarCarrinho('vaso')"
+                >
+                  <img class="cart" src="imagens/menu/cart.png" /> Adicionar
+                  <br />
+                  ao carrinho
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
