@@ -39,12 +39,14 @@ body{
 
 
 .menu{
+    width
     overflow: hidden;
     align-items: center;
     display: flex;
     margin-right: 30px;
     margin-left: 10%;
     margin-bottom: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 615px) {
@@ -88,7 +90,7 @@ body{
 }
 
 .vazio{
-    width: 42%;
+    width: 50%;
 }
 
 .iconePessoa

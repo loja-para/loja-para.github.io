@@ -13,21 +13,13 @@
         <img src="imagens/logo/transpLiso.png" alt="logo" class="logo" />
         <a href="index.html" class="textoMenu" target="_parent">Início</a>
         <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
-        <div class="carrinhoMenu">
-          <button onclick="openPanel()" class="textoMenu" target="_parent">
-            <img class="cartMenu" src="imagens/menu/cartMenu.png" />
-            <p style="font-size: 14px">Carrinho</p>
-          </button>
-        </div>
-        <div class="vazio"></div>
-        <a href="usuario.html" class="textoMenu" target="_parent">
-          <img src="imagens/menu/personIcon.png" class="iconePessoa" /> Seu
-          usuario</a
-        >
-      </div>
     </header>
     <main>
-      <form action=""></form>
+      <form action="login.php" method="post">
+        <p>Login: <input type="text" name="usuario" id="login"></p>
+        <p>Senha: <input type="password" name="senha" id="senha"></p>
+        <input type="submit" value="enviar">
+      </form>
     </main>
   </body>
   <script src="script/script.js"></script>
