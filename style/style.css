@@ -26,6 +26,7 @@ body{
 .logo{
     width: 135px;
     height: 90px;
+    margin-left: 15%;
 }
 
 @media (max-width: 615px) {
@@ -39,12 +40,11 @@ body{
 
 
 .menu{
-    width
+    width: 110%;
     overflow: hidden;
     align-items: center;
     display: flex;
-    margin-right: 30px;
-    margin-left: 10%;
+    margin-left: -15px;
     margin-bottom: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -90,7 +90,7 @@ body{
 }
 
 .vazio{
-    width: 50%;
+    width: 32%;
 }
 
 .iconePessoa
