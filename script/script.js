@@ -31,6 +31,7 @@ function closePanel()
 
 // Crie um array para armazenar os itens do carrinho
 
+var quantidade = 0;
 var total = 0;
 var produtos = [
     {
@@ -50,7 +51,7 @@ function adicionarCarrinho(item, preco)
     total += preco;
 
     produtos[0][item] += 1;
-
+    quantidade += 1;
     //mostra o item no carrinho
 
     var mostrar = document.getElementById(item).style.display;
@@ -74,7 +75,8 @@ function remover(item, preco)
     total -= preco;
 
     produtos[0][item] -= 1;
-
+    quantidade -= 1;
+    
     //mostra o item no carrinho
     if ( produtos[0][item] < 1 )
     {    
@@ -83,7 +85,7 @@ function remover(item, preco)
         {
             document.getElementById(item).style.display = 'none';
         }
-        if ( carrinho.length == 0 )
+        if ( quantidade == 0 )
         {
             document.getElementById('botaoPagar').style.display = 'none';
         }
