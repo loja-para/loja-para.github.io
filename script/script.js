@@ -1,3 +1,16 @@
+var quantidade = 0;
+var total = 0;
+var produtos = [
+    {
+        garrafinhas: 0,
+        jambu: 0,
+        barco: 0,
+        biojoia: 0,
+        cuia: 0,
+        vaso: 0
+    }
+];
+
 function showNotification()
 {
     var notification = document.getElementById("notification");
@@ -9,12 +22,10 @@ function showNotification()
     3000); // 3000 milliseconds = 3 seconds
 }
 
-var carrinho = [];
-
 function openPanel()
 {
     document.getElementById('sidePanel').style.right = '0';
-    if ( carrinho.length == 0 )
+    if ( quantidade == 0 )
     {
         document.getElementById('botaoPagar').style.display = 'none';
     }
@@ -31,18 +42,7 @@ function closePanel()
 
 // Crie um array para armazenar os itens do carrinho
 
-var quantidade = 0;
-var total = 0;
-var produtos = [
-    {
-        garrafinhas: 0,
-        jambu: 0,
-        barco: 0,
-        biojoia: 0,
-        cuia: 0,
-        vaso: 0
-    }
-];
+
 
 // Função para adicionar item ao carrinho
 function adicionarCarrinho(item, preco)
@@ -76,6 +76,11 @@ function remover(item, preco)
 
     produtos[0][item] -= 1;
     quantidade -= 1;
+
+    if ( quantidade <= 0 )
+    {
+        quantidade = 0;
+    }
     
     //mostra o item no carrinho
     if ( produtos[0][item] < 1 )
@@ -102,4 +107,22 @@ alterarQuantidade()
     document.getElementById('quantidadeBiojoias').textContent = produtos[0][3];
     document.getElementById('quantidadeCuias').textContent = produtos[0][4];
     document.getElementById('quantidadeVasos').textContent = produtos[0][5];
+}
+
+window.onload = function() {
+    // Recupere o carrinho do localStorage
+    const carrinhoSalvo = JSON.parse(localStorage.getItem('carrinho'));
+
+    if (carrinhoSalvo) {
+        carrinho = carrinhoSalvo;
+
+        // Mostra os itens no carrinho
+        for (let item of carrinho) {
+            document.getElementById(item).style.display = 'block';
+        }
+
+        if (carrinho.length > 0) {
+            document.getElementById('botaoPagar').style.display = 'block';
+        }
+    }
 }

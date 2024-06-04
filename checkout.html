@@ -31,15 +31,112 @@
       <h2 class="carrinhoTitle">Carrinho</h2>
       <!-- Botão de fechar permanece aqui -->
       <button id="btnFechar" onclick="closePanel()">X</button>
-      <p class="totalCompra">Total: R$ <span id="total">0,00</span></p>
-      <a href="checkout.html">
-        <button class="botaoPagar">Ir Para Pagamento</button>
-      </a>
 
-      <!-- Novo contêiner para itens do carrinho -->
-      <div id="itensCarrinho">
-        <!-- Itens do carrinho serão inseridos aqui -->
+      <!-- Itens do carrinho -->
+      <div class="itens-carrinho">
+
+        <!-- Garrafinhas -->
+        <div class="itensCarrinho" id="garrafinhas" style="display: none">
+          <img
+            src="imagens/conteudo/garrafasCheiro.jpg"
+            class="imgCarrinho"
+            alt=""
+          />
+          <p class="nomeProduto">Garrafinhas de Cheiro</p>
+          <p class="valorProduto">R$ 3,50</p>
+          <p class="valorProduto" id="quantidadeGarrafas"></p>
+          <button class="botaoRemover" onclick="remover('garrafinhas', 3.50)">
+            Remover
+          </button>
+        </div>
+
+        <!-- Jambu -->
+        <div class="itensCarrinho" id="jambu" style="display: none">
+          <img
+            src="imagens/conteudo/cachacaJambu.jpg"
+            class="imgCarrinho"
+            alt=""
+          />
+          <p class="nomeProduto">Cachaça de Jambu</p>
+          <p class="valorProduto">R$ 7,90</p>
+          <p class="quantidade" id="quantidadeJambu"></p>
+          <button class="botaoRemover" onclick="remover('jambu', 7.90)">
+            Remover
+          </button>
+        </div>
+
+        <!-- Barco -->
+        <div class="itensCarrinho" id="barco" style="display: none">
+          <img
+            src="imagens/conteudo/barcosMiriti.jpg"
+            class="imgCarrinho"
+            alt=""
+          />
+          <p class="nomeProduto">Barcos de Miriti</p>
+          <p class="valorProduto">R$ 5,90</p>
+          <p class="quantidade" id="quantidadeBarcos"></p>
+          <button class="botaoRemover" onclick="remover('barco', 5.90)">
+            Remover
+          </button>
+        </div>
+
+        <!-- Biojoia -->
+        <div class="itensCarrinho" id="biojoia" style="display: none">
+          <img
+            src="imagens/conteudo/colarBiojoias.jpg"
+            class="imgCarrinho"
+            alt=""
+          />
+          <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
+          <p class="valorProduto">R$ 9,90</p>
+          <p class="quantidade" id="quantidadeBiojoias"></p>
+          <button class="botaoRemover" onclick="remover('biojoia', 9.90)">
+            Remover
+          </button>
+        </div>
+
+        <!-- Cuia -->
+        <div class="itensCarrinho" id="cuia" style="display: none">
+          <img
+            src="imagens/conteudo/cuia.jpg"
+            class="imgCarrinho"
+            alt=""
+          />
+          <p class="nomeProduto">Cuia</p>
+          <p class="valorProduto">R$ 6,90</p>
+          <p class="quantidade" id="quantidadeCuias"></p>
+          <button class="botaoRemover" onclick="remover('cuia', 6.90)">
+            Remover
+          </button>
+        </div>
+
+        <!-- Vaso -->
+        <div class="itensCarrinho" id="vaso" style="display: none">
+          <img
+            src="imagens/conteudo/vasoRegional.jpg"
+            class="imgCarrinho"
+            alt=""
+          />
+          <p class="nomeProduto">Vaso Regional Paraense</p>
+          <p class="valorProduto">R$ 29,90</p>
+          <p class="quantidade" id="quantidadeVasos"></p>
+          <button class="botaoRemover" onclick="remover('vaso', 29.90)">
+            Remover
+          </button>
+        </div>
       </div>
+      
+      <!-- Rodapé do Painel -->
+      <div class="rodapePainel">
+        <p class="totalCompra">
+          Total: <spam id="total">--</spam>
+        </p>
+        <a href="checkout.html">
+          <button class="botaoPagar" id="botaoPagar" style="display: none;">Ir Para Pagamento</button>
+        </a>
+      </div>
+    
+    <!-- Fim do Painel de Compra -->
     </div>
   </body>
 </html>
