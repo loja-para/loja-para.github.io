@@ -38,6 +38,8 @@
 
         <!-- Itens do carrinho -->
         <div class="itens-carrinho">
+
+          <!-- Garrafinhas -->
           <div class="itensCarrinho" id="garrafinhas" style="display: none">
             <img
               src="imagens/conteudo/garrafasCheiro.jpg"
@@ -46,10 +48,13 @@
             />
             <p class="nomeProduto">Garrafinhas de Cheiro</p>
             <p class="valorProduto">R$ 3,50</p>
-            <button class="botaoRemover" onclick="remover('garrafinhas')">
+            <p class="valorProduto" id="quantidadeGarrafas"></p>
+            <button class="botaoRemover" onclick="remover('garrafinhas', 3.50)">
               Remover
             </button>
           </div>
+
+          <!-- Jambu -->
           <div class="itensCarrinho" id="jambu" style="display: none">
             <img
               src="imagens/conteudo/cachacaJambu.jpg"
@@ -58,10 +63,13 @@
             />
             <p class="nomeProduto">Cachaça de Jambu</p>
             <p class="valorProduto">R$ 7,90</p>
-            <button class="botaoRemover" onclick="remover('jambu')">
+            <p class="quantidade" id="quantidadeJambu"></p>
+            <button class="botaoRemover" onclick="remover('jambu', 7.90)">
               Remover
             </button>
           </div>
+
+          <!-- Barco -->
           <div class="itensCarrinho" id="barco" style="display: none">
             <img
               src="imagens/conteudo/barcosMiriti.jpg"
@@ -70,10 +78,13 @@
             />
             <p class="nomeProduto">Barcos de Miriti</p>
             <p class="valorProduto">R$ 5,90</p>
-            <button class="botaoRemover" onclick="remover('barco')">
+            <p class="quantidade" id="quantidadeBarcos"></p>
+            <button class="botaoRemover" onclick="remover('barco', 5.90)">
               Remover
             </button>
           </div>
+
+          <!-- Biojoia -->
           <div class="itensCarrinho" id="biojoia" style="display: none">
             <img
               src="imagens/conteudo/colarBiojoias.jpg"
@@ -82,18 +93,28 @@
             />
             <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
             <p class="valorProduto">R$ 9,90</p>
-            <button class="botaoRemover" onclick="remover('biojoia')">
+            <p class="quantidade" id="quantidadeBiojoias"></p>
+            <button class="botaoRemover" onclick="remover('biojoia', 9.90)">
               Remover
             </button>
           </div>
+
+          <!-- Cuia -->
           <div class="itensCarrinho" id="cuia" style="display: none">
-            <img src="imagens/conteudo/cuia.jpg" class="imgCarrinho" alt="" />
+            <img
+              src="imagens/conteudo/cuia.jpg"
+              class="imgCarrinho"
+              alt=""
+            />
             <p class="nomeProduto">Cuia</p>
             <p class="valorProduto">R$ 6,90</p>
-            <button class="botaoRemover" onclick="remover('cuia')">
+            <p class="quantidade" id="quantidadeCuias"></p>
+            <button class="botaoRemover" onclick="remover('cuia', 6.90)">
               Remover
             </button>
           </div>
+
+          <!-- Vaso -->
           <div class="itensCarrinho" id="vaso" style="display: none">
             <img
               src="imagens/conteudo/vasoRegional.jpg"
@@ -102,7 +123,8 @@
             />
             <p class="nomeProduto">Vaso Regional Paraense</p>
             <p class="valorProduto">R$ 29,90</p>
-            <button class="botaoRemover" onclick="remover('vaso')">
+            <p class="quantidade" id="quantidadeVasos"></p>
+            <button class="botaoRemover" onclick="remover('vaso', 29.90)">
               Remover
             </button>
           </div>
@@ -111,14 +133,14 @@
         <!-- Rodapé do Painel -->
         <div class="rodapePainel">
           <p class="totalCompra">
-            Total: R$
-            <span id="total">0,00
-            </span>
+            Total: <spam id="total">--</spam>
           </p>
           <a href="checkout.html">
-            <button class="botaoPagar">Ir Para Pagamento</button>
+            <button class="botaoPagar" id="botaoPagar" style="display: none;">Ir Para Pagamento</button>
           </a>
         </div>
+      
+      <!-- Fim do Painel de Compra -->
       </div>
 
       <!-- Conteúdo da página -->
@@ -146,7 +168,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('garrafinhas')"
+                  onclick="adicionarCarrinho('garrafinhas', 3.50)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -175,7 +197,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('jambu')"
+                  onclick="adicionarCarrinho('jambu', 7.90)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -209,7 +231,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('barco')"
+                  onclick="adicionarCarrinho('barco', 5.90)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -239,7 +261,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('biojoia')"
+                  onclick="adicionarCarrinho('biojoia', 9.90)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -270,7 +292,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('cuia')"
+                  onclick="adicionarCarrinho('cuia', 6.90)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -300,7 +322,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('vaso')"
+                  onclick="adicionarCarrinho('vaso', 29.90)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
