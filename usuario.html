@@ -10,15 +10,16 @@
   <body>
     <header>
       <div class="menu">
-        <label for="botaoPagina">
-          <img src="imagens/logo/transpLiso.png" alt="logo" class="logo"/>
-        </label>
-        <a href="index.html" class="textoMenu" id="botaoPagina" target="_parent">Início</a>
-        <div class="vazio2"></div>
-        <button class="textoMenu">
-          <img src="imagens/menu/personIcon.png" class="iconePessoa" />
-          Seu usuário
-        </button>
+        <img src="imagens/logo/transpLiso.png" alt="logo" class="logo" />
+        <a href="index.html" class="textoMenu" target="_parent">Início</a>
+        <a href="equipe.html" class="textoMenu" target="_parent">Equipe</a>
+        <div class="carrinhoMenu">
+          <button onclick="openPanel()" class="textoMenu" target="_parent">
+            <img class="cartMenu" src="imagens/menu/cartMenu.png" />
+            <p style="font-size: 14px">Carrinho</p>
+          </button>
+        </div>
+        <div class="vazio"></div>
       </div>
     </header>
   </body>

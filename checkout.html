@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" href="imagens/logo/icon.png" type="image/png" />
-    <script src="script/script.js"></script>
+    <script src="script/script2.js"></script>
     <title>Checkout - Loja Pará</title>
   </head>
   <body onload="displayCartItems()">
@@ -27,6 +27,7 @@
         >
       </div>
     </header>
+    <!-- Painel de compra -->
     <div id="sidePanel" class="side-panel">
       <h2 class="carrinhoTitle">Carrinho</h2>
       <!-- Botão de fechar permanece aqui -->
@@ -43,9 +44,9 @@
             alt=""
           />
           <p class="nomeProduto">Garrafinhas de Cheiro</p>
-          <p class="valorProduto">R$ 3,50</p>
+          <p class="valorProduto" id="preco0">R$ 3,50</p>
           <p class="valorProduto" id="quantidadeGarrafas"></p>
-          <button class="botaoRemover" onclick="remover('garrafinhas', 3.50)">
+          <button class="botaoRemover" onclick="remover('garrafinhas')">
             Remover
           </button>
         </div>
@@ -58,9 +59,9 @@
             alt=""
           />
           <p class="nomeProduto">Cachaça de Jambu</p>
-          <p class="valorProduto">R$ 7,90</p>
+          <p class="valorProduto" id="preco1">R$ 7,90</p>
           <p class="quantidade" id="quantidadeJambu"></p>
-          <button class="botaoRemover" onclick="remover('jambu', 7.90)">
+          <button class="botaoRemover" onclick="remover('jambu')">
             Remover
           </button>
         </div>
@@ -73,9 +74,9 @@
             alt=""
           />
           <p class="nomeProduto">Barcos de Miriti</p>
-          <p class="valorProduto">R$ 5,90</p>
+          <p class="valorProduto" id="preco2">R$ 5,90</p>
           <p class="quantidade" id="quantidadeBarcos"></p>
-          <button class="botaoRemover" onclick="remover('barco', 5.90)">
+          <button class="botaoRemover" onclick="remover('barco')">
             Remover
           </button>
         </div>
@@ -88,9 +89,9 @@
             alt=""
           />
           <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
-          <p class="valorProduto">R$ 9,90</p>
+          <p class="valorProduto" id="preco3">R$ 9,90</p>
           <p class="quantidade" id="quantidadeBiojoias"></p>
-          <button class="botaoRemover" onclick="remover('biojoia', 9.90)">
+          <button class="botaoRemover" onclick="remover('biojoia')">
             Remover
           </button>
         </div>
@@ -103,9 +104,9 @@
             alt=""
           />
           <p class="nomeProduto">Cuia</p>
-          <p class="valorProduto">R$ 6,90</p>
+          <p class="valorProduto" id="preco4">R$ 6,90</p>
           <p class="quantidade" id="quantidadeCuias"></p>
-          <button class="botaoRemover" onclick="remover('cuia', 6.90)">
+          <button class="botaoRemover" onclick="remover('cuia')">
             Remover
           </button>
         </div>
@@ -118,9 +119,9 @@
             alt=""
           />
           <p class="nomeProduto">Vaso Regional Paraense</p>
-          <p class="valorProduto">R$ 29,90</p>
+          <p class="valorProduto" id="preco5">R$ 29,90</p>
           <p class="quantidade" id="quantidadeVasos"></p>
-          <button class="botaoRemover" onclick="remover('vaso', 29.90)">
+          <button class="botaoRemover" onclick="remover('vaso')">
             Remover
           </button>
         </div>
@@ -132,7 +133,7 @@
           Total: <spam id="total">--</spam>
         </p>
         <a href="checkout.html">
-          <button class="botaoPagar" id="botaoPagar" style="display: none;">Ir Para Pagamento</button>
+          <button class="botaoPagar" id="botaoPagar">Ir Para Pagamento</button>
         </a>
       </div>
     

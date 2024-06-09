@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" href="imagens/logo/icon.png" type="image/png" />
-    <script src="script/script.js"></script>
+    <script src="script/script2.js"></script>
     <title>Início - Loja Pará</title>
   </head>
   <body>
@@ -47,9 +47,9 @@
               alt=""
             />
             <p class="nomeProduto">Garrafinhas de Cheiro</p>
-            <p class="valorProduto">R$ 3,50</p>
+            <p class="valorProduto" id="preco0">3.50</p>
             <p class="valorProduto" id="quantidadeGarrafas"></p>
-            <button class="botaoRemover" onclick="remover('garrafinhas', 3.50)">
+            <button class="botaoRemover" onclick="remover(0)">
               Remover
             </button>
           </div>
@@ -62,9 +62,9 @@
               alt=""
             />
             <p class="nomeProduto">Cachaça de Jambu</p>
-            <p class="valorProduto">R$ 7,90</p>
+            <p class="valorProduto" id="preco1">7.90</p>
             <p class="quantidade" id="quantidadeJambu"></p>
-            <button class="botaoRemover" onclick="remover('jambu', 7.90)">
+            <button class="botaoRemover" onclick="remover(1)">
               Remover
             </button>
           </div>
@@ -77,9 +77,9 @@
               alt=""
             />
             <p class="nomeProduto">Barcos de Miriti</p>
-            <p class="valorProduto">R$ 5,90</p>
+            <p class="valorProduto" id="preco2">5.90</p>
             <p class="quantidade" id="quantidadeBarcos"></p>
-            <button class="botaoRemover" onclick="remover('barco', 5.90)">
+            <button class="botaoRemover" onclick="remover(2)">
               Remover
             </button>
           </div>
@@ -92,9 +92,9 @@
               alt=""
             />
             <p class="nomeProduto">Colar de Biojoias Amazônicas</p>
-            <p class="valorProduto">R$ 9,90</p>
+            <p class="valorProduto" id="preco3">9.90</p>
             <p class="quantidade" id="quantidadeBiojoias"></p>
-            <button class="botaoRemover" onclick="remover('biojoia', 9.90)">
+            <button class="botaoRemover" onclick="remover(3)">
               Remover
             </button>
           </div>
@@ -107,9 +107,9 @@
               alt=""
             />
             <p class="nomeProduto">Cuia</p>
-            <p class="valorProduto">R$ 6,90</p>
+            <p class="valorProduto" id="preco4">6.90</p>
             <p class="quantidade" id="quantidadeCuias"></p>
-            <button class="botaoRemover" onclick="remover('cuia', 6.90)">
+            <button class="botaoRemover" onclick="remover(4)">
               Remover
             </button>
           </div>
@@ -122,9 +122,9 @@
               alt=""
             />
             <p class="nomeProduto">Vaso Regional Paraense</p>
-            <p class="valorProduto">R$ 29,90</p>
+            <p class="valorProduto" id="preco5">29.90</p>
             <p class="quantidade" id="quantidadeVasos"></p>
-            <button class="botaoRemover" onclick="remover('vaso', 29.90)">
+            <button class="botaoRemover" onclick="remover(5)">
               Remover
             </button>
           </div>
@@ -168,7 +168,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('garrafinhas', 3.50)"
+                  onclick="adicionarCarrinho(0)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -197,7 +197,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('jambu', 7.90)"
+                  onclick="adicionarCarrinho(1)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -231,7 +231,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('barco', 5.90)"
+                  onclick="adicionarCarrinho(2)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -261,7 +261,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('biojoia', 9.90)"
+                  onclick="adicionarCarrinho(3)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -292,7 +292,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('cuia', 6.90)"
+                  onclick="adicionarCarrinho(4)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
@@ -322,7 +322,7 @@
                 </a>
                 <button
                   class="botaoCarrinho"
-                  onclick="adicionarCarrinho('vaso', 29.90)"
+                  onclick="adicionarCarrinho(5)"
                 >
                   <img class="cart" src="imagens/menu/cart.png" />
                   Adicionar <br />
