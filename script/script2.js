@@ -21,7 +21,6 @@ function salvarCarrinho() {
 }
 
 // Função para recuperar o carrinho do localStorage
-// Função para recuperar o carrinho do localStorage
 function recuperarCarrinho()
 {
     var produtosRecuperados = localStorage.getItem('produtos');
